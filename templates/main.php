@@ -44,7 +44,7 @@
                             <?php if (($currentTask['finishFlag']) && ($showCompleteTasks === 0)) : ?>
                                 <?php continue ?>
                             <?php else : ?>
-                                <tr class="tasks__item task <?= ($currentTask['finishFlag']) ? "task--completed" : less24hours($currentTask['finishDate']) ?>">
+                                <tr class="tasks__item task <?= ($currentTask['finishFlag']) ? "task--completed" : less24hours($currentTask['finishDate']); ?>">
                                     <td class="task__select">
                                         <label class="checkbox task__checkbox">
                                             <input class="checkbox__input visually-hidden" type="checkbox" checked>
